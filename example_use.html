@@ -1,0 +1,26 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <button>wow</button>
+        <input type="text"></input>
+        <a href="">test</a>
+
+        <div id="modal">
+            <button>inside element</button>
+        </div>
+
+        <script type="application/javascript" src="main.js"></script>
+        <script>
+            var aPrevents = document.querySelectorAll('a');
+
+            for (var i = 0; i < aPrevents.length; i++) {
+                aPrevents[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                });
+            }
+
+            Telemetry.runTelemetry(null, 'pedido');
+        </script>
+    </body>
+</html>
